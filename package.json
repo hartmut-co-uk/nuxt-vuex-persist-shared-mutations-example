@@ -8,12 +8,16 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate",
+    "deploy:gh-pages": "node scripts/gh-pages-deploy.js"
   },
   "dependencies": {
     "nuxt": "^2.0.0",
     "vuex-persist": "^2.2.0",
     "vuex-shared-mutations": "^1.0.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "execa": "latest"
+  }
 }
