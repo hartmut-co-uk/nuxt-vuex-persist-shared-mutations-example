@@ -8,16 +8,14 @@
       <h2 class="subtitle">
         My dazzling Nuxt.js project
       </h2>
+      <div class="main">
+        <h1>{{ $store.state.count }}</h1>
+        <button @click="$store.commit('decrement');">-</button>
+        <button @click="$store.commit('increment');">+</button>
+      </div>
       <div class="links">
         <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
+          href="https://github.com/hartmut-co-uk/nuxt-vuex-persist-shared-mutations-example"
           target="_blank"
           class="button--grey"
         >
@@ -66,7 +64,11 @@ export default {
   padding-bottom: 15px;
 }
 
+.main {
+  padding: 10px;
+}
+
 .links {
-  padding-top: 15px;
+  padding: 10px;
 }
 </style>

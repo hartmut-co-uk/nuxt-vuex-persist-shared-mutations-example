@@ -28,6 +28,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    { src: '~plugins/vuex-persist.js', ssr: false },
+    { src: '~plugins/vuex-shared-mutations.js', ssr: false }
   ],
   /*
   ** Nuxt.js dev-modules
