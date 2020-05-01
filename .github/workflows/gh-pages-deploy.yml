@@ -21,4 +21,5 @@ jobs:
       - name: Run deploy script
         run: |
           git config user.name "hartmut-co-uk" && git config user.email "info@hartmut.co.uk"
+          yarn generate:gh-pages
           yarn deploy:gh-pages
