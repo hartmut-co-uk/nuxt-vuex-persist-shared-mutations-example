@@ -1,0 +1,17 @@
+{
+  "name": "nuxt-vuex-persist-shared-mutations-example",
+  "version": "1.0.0",
+  "description": "My dazzling Nuxt.js project",
+  "author": "Hartmut",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {}
+}
