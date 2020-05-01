@@ -29,6 +29,12 @@ $ yarn dev
 
 # generate static project
 $ yarn generate
+
+# generate static for GitHub Pages
+$ yarn generate:gh-pages
+
+# deploy `dist` folder for GitHub Pages (branch 'gh-pages')
+$ yarn deploy:gh-pages
 ```
 
 ## Deployment: Github Actions > Github Pages
@@ -36,15 +42,14 @@ $ yarn generate
 :muscle: This repo has been setup for fully automated deployment of the [Live Preview](https://hartmut-co-uk.github.io/nuxt-vuex-persist-shared-mutations-example/) via *Github Actions* as *Github Pages*.
 
 For details, check following files + references below:   
-`package.json`   
-`nuxt.config.js`   
-`scripts/gh-pages-deploy.js`   
+`nuxt.config.js` -> `routerBase`   
+`package.json` -> scripts `generate:gh-pages` + `deploy:gh-pages`   
 `.github/workflows/gh-pages-deploy.yml`   
    
 ### Credits
 
 - https://nuxtjs.org/faq/github-pages/
-- https://dev.to/rolanddoda/deploy-to-github-pages-like-a-pro-with-github-actions-4hdg
+- https://github.com/L33T-KR3W/push-dir
 
 ### References Github :octocat: :sparkles: 
 
